@@ -856,3 +856,108 @@ Track temperature abnormalities.
 * X-axis: Hour
 * Y-axis: HR
 * Goal: Observe heart stress progression.
+
+# 12. Oxygenation, Ventilation, and Perfusion Markers
+
+## O2Sat (Oxygen Saturation)
+
+**Definition:**
+Measures the percentage of hemoglobin carrying oxygen.
+
+**Clinical Importance:**
+Low O2Sat indicates inadequate oxygen delivery to tissues, common in sepsis-related respiratory failure.
+
+**Normal Range:**
+95–100%
+
+**Sepsis Interpretation:**
+Lower O2Sat may suggest worsening lung function.
+
+**Example Use in Tableau:**
+Track oxygenation decline.
+
+---
+
+## EtCO2 (End-Tidal Carbon Dioxide)
+
+**Definition:**
+Measures carbon dioxide at the end of exhalation.
+
+**Clinical Importance:**
+Helps evaluate ventilation efficiency and perfusion status.
+
+**Normal Range:**
+35–45 mmHg
+
+**Sepsis Interpretation:**
+Low EtCO2 may indicate poor perfusion or hyperventilation.
+
+**Example Use in Tableau:**
+Assess respiratory efficiency.
+
+---
+
+## Resp (Respiratory Rate)
+
+**Definition:**
+Number of breaths per minute.
+
+**Clinical Importance:**
+Increased respiratory rate is one of the earliest sepsis signs.
+
+**Normal Range:**
+12–20 breaths/min
+
+**Sepsis Interpretation:**
+High Resp often indicates metabolic stress or compensation.
+
+**Example Use in Tableau:**
+Track respiratory distress progression.
+
+---
+
+## MAP (Mean Arterial Pressure)
+
+**Definition:**
+Average pressure in arteries during one cardiac cycle.
+
+**Clinical Importance:**
+A critical perfusion marker. Low MAP indicates poor organ perfusion and risk of septic shock.
+
+**Normal Range:**
+70–100 mmHg
+
+**Sepsis Interpretation:**
+MAP < 65 mmHg is dangerous.
+
+**Example Use in Tableau:**
+Monitor shock severity.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 37: O2Sat Distribution
+
+* X-axis: O2Sat
+* Color: SepsisLabel
+* Goal: Identify oxygenation failure.
+
+### Worksheet 38: Respiratory Rate by Sepsis
+
+* X-axis: Resp
+* Color: SepsisLabel
+* Goal: Detect respiratory distress.
+
+### Worksheet 39: MAP Distribution
+
+* X-axis: MAP
+* Color: SepsisLabel
+* Goal: Detect perfusion failure.
+
+### Worksheet 40: Resp vs MAP
+
+* X-axis: Resp
+* Y-axis: MAP
+* Color: SepsisLabel
+* Goal: Analyze compensation and shock.
