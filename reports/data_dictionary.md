@@ -164,3 +164,72 @@ Track infection intensity and sepsis progression.
 * X-axis: Hour
 * Y-axis: Hct
 * Goal: Observe blood concentration changes over time.
+# 3. Electrolytes and Coagulation Markers
+
+## Magnesium
+
+**Definition:**
+An essential mineral involved in muscle, nerve, and heart function.
+
+**Clinical Importance:**
+Abnormal magnesium can cause arrhythmias, muscle weakness, and worsen sepsis-related organ dysfunction.
+
+**Normal Range:**
+1.7–2.2 mg/dL
+
+**Example Use in Tableau:**
+Track magnesium imbalance in septic patients.
+
+---
+
+## Fibrinogen
+
+**Definition:**
+A blood clotting protein produced by the liver.
+
+**Clinical Importance:**
+In sepsis, fibrinogen may initially rise due to inflammation and later fall in severe coagulation disorders like DIC (Disseminated Intravascular Coagulation).
+
+**Normal Range:**
+200–400 mg/dL
+
+**Example Use in Tableau:**
+Analyze clotting abnormalities in advanced sepsis.
+
+---
+
+## Potassium
+
+**Definition:**
+A key electrolyte for heart and muscle function.
+
+**Clinical Importance:**
+Abnormal potassium can lead to dangerous cardiac rhythm problems. Sepsis can disrupt potassium due to kidney dysfunction.
+
+**Normal Range:**
+3.5–5.0 mEq/L
+
+**Example Use in Tableau:**
+Identify potassium imbalance in severe cases.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 7: Potassium Distribution
+
+* X-axis: Potassium
+* Color: SepsisLabel
+* Goal: Detect electrolyte disturbances.
+
+### Worksheet 8: Magnesium vs Sepsis
+
+* X-axis: Magnesium
+* Y-axis: SepsisLabel
+* Goal: Compare mineral imbalance.
+
+### Worksheet 9: Fibrinogen Levels
+
+* X-axis: Fibrinogen
+* Color: SepsisLabel
+* Goal: Explore clotting dysfunction.
