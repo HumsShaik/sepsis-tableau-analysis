@@ -92,3 +92,75 @@ Study whether delayed ICU admission increases sepsis severity.
 * Dimension: Unit1 / Unit2
 * Measure: Count of Patients
 * Goal: Compare sepsis across ICU units.
+
+# 2. Blood Cell Markers
+
+## Hct (Hematocrit)
+
+**Definition:**
+Percentage of red blood cells in blood.
+
+**Clinical Importance:**
+Low Hct may indicate anemia, bleeding, or fluid imbalance. In sepsis, abnormal Hct can signal worsening circulation.
+
+**Normal Range:**
+
+* Male: 41–50%
+* Female: 36–44%
+
+**Example Use in Tableau:**
+Compare Hct levels between sepsis and non-sepsis patients.
+
+---
+
+## Platelets
+
+**Definition:**
+Blood cells responsible for clotting.
+
+**Clinical Importance:**
+Low platelets (thrombocytopenia) are common in severe sepsis and may indicate organ dysfunction.
+
+**Normal Range:**
+150,000–450,000 per microliter
+
+**Example Use in Tableau:**
+Analyze platelet drop across sepsis stages.
+
+---
+
+## WBC (White Blood Cell Count)
+
+**Definition:**
+Measures immune system activity.
+
+**Clinical Importance:**
+High WBC often indicates infection. Very low WBC can indicate severe immune failure.
+
+**Normal Range:**
+4,000–11,000 per microliter
+
+**Example Use in Tableau:**
+Track infection intensity and sepsis progression.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 4: WBC Distribution
+
+* X-axis: WBC
+* Color: SepsisLabel
+* Goal: Compare infection burden.
+
+### Worksheet 5: Platelets vs Sepsis
+
+* X-axis: Platelets
+* Y-axis: SepsisLabel
+* Goal: Identify clotting abnormalities.
+
+### Worksheet 6: Hct Trends
+
+* X-axis: Hour
+* Y-axis: Hct
+* Goal: Observe blood concentration changes over time.
