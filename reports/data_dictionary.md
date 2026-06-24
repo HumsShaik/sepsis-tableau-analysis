@@ -298,3 +298,83 @@ Compare pH changes in septic vs non-septic patients.
 * Color: SepsisLabel
 * Goal: Understand acid-base relationship.
 
+# 5. Tissue Hypoxia and Organ Stress Markers
+
+## Lactate
+
+**Definition:**
+Measures lactic acid produced when tissues do not receive enough oxygen.
+
+**Clinical Importance:**
+One of the strongest markers of sepsis severity. High lactate indicates tissue hypoxia and poor perfusion.
+
+**Normal Range:**
+0.5–2.0 mmol/L
+
+**Sepsis Interpretation:**
+
+* > 2 = concern
+* > 4 = severe sepsis or septic shock
+
+**Example Use in Tableau:**
+Track lactate rise as sepsis worsens.
+
+---
+
+## Alkalinephos (Alkaline Phosphatase)
+
+**Definition:**
+An enzyme related to liver and bile duct function.
+
+**Clinical Importance:**
+Can increase in sepsis due to liver dysfunction or systemic inflammation.
+
+**Normal Range:**
+44–147 IU/L
+
+**Example Use in Tableau:**
+Study liver stress during sepsis.
+
+---
+
+## Phosphate
+
+**Definition:**
+Mineral important for energy production and cellular repair.
+
+**Clinical Importance:**
+Abnormal phosphate levels may indicate kidney dysfunction, malnutrition, or severe metabolic stress in sepsis.
+
+**Normal Range:**
+2.5–4.5 mg/dL
+
+**Example Use in Tableau:**
+Evaluate metabolic instability in sepsis.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 13: Lactate Distribution
+
+* X-axis: Lactate
+* Color: SepsisLabel
+* Goal: Identify severe hypoperfusion.
+
+### Worksheet 14: Lactate Over Time
+
+* X-axis: Hour
+* Y-axis: Lactate
+* Goal: Track worsening tissue hypoxia.
+
+### Worksheet 15: Phosphate vs Sepsis
+
+* X-axis: Phosphate
+* Color: SepsisLabel
+* Goal: Observe metabolic instability.
+
+### Worksheet 16: Alkalinephos Levels
+
+* X-axis: Alkalinephos
+* Color: SepsisLabel
+* Goal: Monitor liver stress.
