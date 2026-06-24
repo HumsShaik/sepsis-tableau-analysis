@@ -752,3 +752,107 @@ Study respiratory compensation patterns.
 * Y-axis: pH
 * Color: SepsisLabel
 * Goal: Understand acid-base balance.
+
+# 11. Core Vital Signs
+
+## HR (Heart Rate)
+
+**Definition:**
+Number of heart beats per minute.
+
+**Clinical Importance:**
+High HR (tachycardia) is a common early sign of infection and sepsis.
+
+**Normal Range:**
+60–100 bpm
+
+**Sepsis Interpretation:**
+Higher HR may indicate stress, fever, or shock.
+
+**Example Use in Tableau:**
+Track tachycardia progression.
+
+---
+
+## SBP (Systolic Blood Pressure)
+
+**Definition:**
+Pressure in arteries during heart contraction.
+
+**Clinical Importance:**
+Low SBP may indicate poor perfusion and septic shock.
+
+**Normal Range:**
+90–120 mmHg
+
+**Sepsis Interpretation:**
+Falling SBP is a major warning sign.
+
+**Example Use in Tableau:**
+Identify hypotension patterns.
+
+---
+
+## DBP (Diastolic Blood Pressure)
+
+**Definition:**
+Pressure in arteries between heartbeats.
+
+**Clinical Importance:**
+Low DBP may indicate circulatory failure.
+
+**Normal Range:**
+60–80 mmHg
+
+**Example Use in Tableau:**
+Assess blood pressure stability.
+
+---
+
+## Temp (Temperature)
+
+**Definition:**
+Body temperature.
+
+**Clinical Importance:**
+Fever or hypothermia are both major signs of sepsis.
+
+**Normal Range:**
+36.5–37.5°C
+
+**Sepsis Interpretation:**
+
+* > 38°C = fever
+* <36°C = hypothermia
+
+**Example Use in Tableau:**
+Track temperature abnormalities.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 33: Heart Rate Distribution
+
+* X-axis: HR
+* Color: SepsisLabel
+* Goal: Detect tachycardia.
+
+### Worksheet 34: Blood Pressure vs Sepsis
+
+* X-axis: SBP
+* Y-axis: DBP
+* Color: SepsisLabel
+* Goal: Detect shock patterns.
+
+### Worksheet 35: Temperature Distribution
+
+* X-axis: Temp
+* Color: SepsisLabel
+* Goal: Analyze fever/hypothermia trends.
+
+### Worksheet 36: HR Over Time
+
+* X-axis: Hour
+* Y-axis: HR
+* Goal: Observe heart stress progression.
