@@ -620,3 +620,74 @@ Measure cardiac stress during sepsis.
 * X-axis: TroponinI
 * Color: SepsisLabel
 * Goal: Identify cardiac injury.
+# 9. Blood Oxygen, Liver Injury, and Coagulation Markers
+
+## Hgb (Hemoglobin)
+
+**Definition:**
+Protein in red blood cells that carries oxygen.
+
+**Clinical Importance:**
+Low hemoglobin reduces oxygen delivery to tissues, worsening sepsis-related hypoxia.
+
+**Normal Range:**
+
+* Male: 13.5–17.5 g/dL
+* Female: 12.0–15.5 g/dL
+
+**Example Use in Tableau:**
+Study oxygen transport efficiency.
+
+---
+
+## AST (Aspartate Aminotransferase)
+
+**Definition:**
+An enzyme found in the liver and other tissues.
+
+**Clinical Importance:**
+Elevated AST may indicate liver damage or cellular injury during severe sepsis.
+
+**Normal Range:**
+10–40 U/L
+
+**Example Use in Tableau:**
+Track liver injury severity.
+
+---
+
+## PTT (Partial Thromboplastin Time)
+
+**Definition:**
+Measures how long blood takes to clot.
+
+**Clinical Importance:**
+Prolonged PTT may indicate coagulation dysfunction, common in severe sepsis and DIC.
+
+**Normal Range:**
+25–35 seconds
+
+**Example Use in Tableau:**
+Assess clotting abnormalities.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 27: Hemoglobin by Sepsis
+
+* X-axis: Hgb
+* Color: SepsisLabel
+* Goal: Compare oxygen-carrying capacity.
+
+### Worksheet 28: AST Levels
+
+* X-axis: AST
+* Color: SepsisLabel
+* Goal: Detect liver injury.
+
+### Worksheet 29: PTT Distribution
+
+* X-axis: PTT
+* Color: SepsisLabel
+* Goal: Measure coagulation delays.
