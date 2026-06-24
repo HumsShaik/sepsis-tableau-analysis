@@ -640,6 +640,12 @@
       <column caption='Patient Max Sepsis' datatype='integer' name='[Calculation_389561383930384387]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='{ FIXED [Patient_ID] : MAX([SepsisLabel]) }' />
       </column>
+      <column caption='Sepsis Patients' datatype='integer' name='[Calculation_389561383944269829]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_389561383930384387] = 1 THEN [Patient_ID] END' />
+      </column>
+      <column caption='Sepsis Percentage' datatype='real' name='[Calculation_389561383944327174]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Calculation_389561383944269829]) / COUNTD([Patient_ID])' />
+      </column>
       <column caption='Hco3' datatype='real' name='[HCO3]' role='measure' type='quantitative' />
       <column caption='Hosp Adm Time' datatype='real' name='[HospAdmTime]' role='measure' type='quantitative' />
       <column caption='Iculos' datatype='integer' name='[ICULOS]' role='measure' type='quantitative' />
@@ -1338,7 +1344,7 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='Sheet 1'>
+    <worksheet name='Task 1 non-sepsis percentage'>
       <table>
         <view>
           <datasources>
@@ -1361,6 +1367,9 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03z6xx813qi5i718lcgme1cbr9mj].[usr:Calculation_389561383720882177:qk]' value='p0.00%' />
+          </style-rule>
           <style-rule element='label'>
             <format attr='text-format' field='[federated.03z6xx813qi5i718lcgme1cbr9mj].[usr:Calculation_389561383720882177:qk]' value='' />
           </style-rule>
@@ -1387,16 +1396,64 @@
       </table>
       <simple-id uuid='{A507CB26-0ED6-4FB9-B51C-0B076D4EE767}' />
     </worksheet>
+    <worksheet name='Task_2_Sepsis_Percentage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dataset1' name='federated.03z6xx813qi5i718lcgme1cbr9mj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03z6xx813qi5i718lcgme1cbr9mj'>
+            <column caption='Patient Max Sepsis' datatype='integer' name='[Calculation_389561383930384387]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Patient_ID] : MAX([SepsisLabel]) }' />
+            </column>
+            <column caption='Sepsis Patients' datatype='integer' name='[Calculation_389561383944269829]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_389561383930384387] = 1 THEN [Patient_ID] END' />
+            </column>
+            <column caption='Sepsis Percentage' datatype='real' name='[Calculation_389561383944327174]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Calculation_389561383944269829]) / COUNTD([Patient_ID])' />
+            </column>
+            <column caption='Patient ID' datatype='integer' name='[Patient_ID]' role='dimension' type='ordinal' />
+            <column caption='Sepsis Label' datatype='integer' name='[SepsisLabel]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_389561383944327174]' derivation='User' name='[usr:Calculation_389561383944327174:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.03z6xx813qi5i718lcgme1cbr9mj].[usr:Calculation_389561383944327174:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03z6xx813qi5i718lcgme1cbr9mj].[usr:Calculation_389561383944327174:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3B8348EC-B558-44D4-BBF7-2385C1629A8C}' />
+    </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' maximized='true' name='Task 1 non-sepsis percentage'>
       <cards>
         <edge name='left'>
           <strip size='160'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
-            <card type='title' />
           </strip>
         </edge>
         <edge name='top'>
@@ -1406,58 +1463,85 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
         </edge>
       </cards>
-      <viewpoint>
-        <selection-collection>
-          <tuple-selection>
-            <tuple-reference>
-              <tuple-descriptor>
-                <pane-descriptor>
-                  <x-fields />
-                  <y-fields />
-                </pane-descriptor>
-                <columns>
-                  <field>[federated.03z6xx813qi5i718lcgme1cbr9mj].[usr:Calculation_389561383720882177:qk]</field>
-                </columns>
-              </tuple-descriptor>
-              <tuple>
-                <value>0.92731059103530344</value>
-              </tuple>
-            </tuple-reference>
-          </tuple-selection>
-        </selection-collection>
-      </viewpoint>
       <simple-id uuid='{B3162C5E-760C-493E-8AAE-FE803E7836BE}' />
+    </window>
+    <window class='worksheet' name='Task_2_Sepsis_Percentage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D718C64C-F4BC-41DA-AE83-4BC3BC44D3B9}' />
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='25' name='Sheet 1' width='64'>
+    <thumbnail height='25' name='Task 1 non-sepsis percentage' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAAAZCAYAAACvrQlzAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAE3UlEQVRoge2ZTWgTaxSGH9M4LQrWSrMQhIAQQUVUEIX6RyCC7lrxD6ouFCyCLipFF5pi
+      RUUoFopQbBH8gYKhuFBsKUjFEKPShaBYLUFbY8AmptRJmqn5mzl3ITc6JL32Qry5SB7I4jvf
+      mfOevAPfd2DmiYhQpmhYSt3An0bZ0CJTNrTIlA0tMmVDi0zZ0CJTNrTIlA0tMmVDi0zZ0CJT
+      NrTIlA0tMtZSiqfTae7evYvH4yEej7NmzRpaWlpYvnx5LscwDIaHh7l58yahUAhFUWhoaGD/
+      /v1UVVXl1fR4PIyMjBTUczqdOJ1OMpkMXq+Xvr4+QqEQAOvWraOpqQm73Z7r7c6dOzx48ID1
+      69fT3NzM4sWLc7WCwSB+v589e/agKMoPESkRuq5LT0+PXL58WTRNE13Xxev1yqFDhyQUCuXy
+      2tvb5cSJE/L27VvRdV1isZh0dHRIW1ubZDKZvLqqqkokEjH9JiYm5PTp03L//n0REXny5Imc
+      P39ePn78KLquSzqdlqGhIdm7d6+Mj4+LiEhvb69cv35ddF2X/v5+k14qlZKLFy/Ky5cv8/RL
+      ZmgwGJSTJ0+KqqqmeHd3t3R2dubWgUBAdF035UQiETl69KhEIpE5ab17906OHz8usVjsH/Ou
+      Xr0qjx49kmQyKWfPnpVgMCgiIvF4XM6cOZPT83q9cu3atby+RERKdoaqqorNZqO6utoU37x5
+      M2NjY8zMzADgcDiwWMxtJhIJFEWhsrLylzqGYdDX14fL5WLRokWz5qXTacLhMFVVVWSzWbLZ
+      bO5I+Vlf0zT8fj+NjY15fUEJL6WKigqi0SiappniNpuNeDxOIpEo+JyqqrS3t7Nt27a8l1GI
+      9+/fEw6HcTqds+ZEo1GuXLlCbW0tGzdupLKyEkVRmJqaAiCbzQJgtVrp7+9n69atVFdXMzk5
+      mdd/yQx1OBxYrVZu3LhBMpkEIB6P4/P5ZjXzxYsXHDlyBJfLxb59+36pYRgGAwMD1NXVUVNT
+      Y9qbnJzk8OHDbN++nQMHDrBlyxZaWlpQFAWr1YrL5aKnp4fR0VFu3brFihUrSCQSqKrKqlWr
+      aG5u5tKlSzQ1NTE4OPij8JwOof+QQCAgp06dEk3TROT7BeB2u8Xtdsu3b9/+Va3Ozk65ffv2
+      nHJ1XZeuri7p7u4uuO/z+cTj8YiIyIULF+TVq1e5vZ/X/7s59Pnz59jtdhYsWADAw4cPyWaz
+      nDt3ruCYNBufPn3izZs37Nq1a075FosFh8PB2NhY3t7Xr18ZGhpix44dv64z5w5/AzMzMxiG
+      kVsHAgGePn3K7t27AUilUvh8Purr682z3k9MTEzw7Nmz3Dn3N4ODg2zYsAGbzZb3zMDAAF++
+      fDHFkskkjx8/pq6uzhQ3DIN79+6xadOm3LFht9sJBAIATE1NMT09zdKlS4ESD/ZdXV14vV5W
+      r17N9PQ04XCYtrY2li1bBkAsFmN8fJzW1ta8G7W2tpaOjg5GRkbo7e1l7dq1WK3f/87nz58Z
+      Hh6mtbW1oG5FRQXHjh0jlUqxcuVKMpkMo6OjNDQ0sHPnTlPu69ev+fDhA42NjblYfX09brcb
+      v99PNBrl4MGDuRc3T6S0n5E1TUPTNCwWC0uWLCk4ivxubYCamhrmz58/52cNw0BVVRYuXGga
+      30pu6J/GX/z3EhRMvRECAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='25' name='Task_2_Sepsis_Percentage' width='64'>
       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
-      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
+      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
     </thumbnail>
   </thumbnails>
 </workbook>
