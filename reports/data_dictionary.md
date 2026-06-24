@@ -233,3 +233,68 @@ Identify potassium imbalance in severe cases.
 * X-axis: Fibrinogen
 * Color: SepsisLabel
 * Goal: Explore clotting dysfunction.
+# 4. Acid-Base Balance Markers
+
+## Base Excess
+
+**Definition:**
+Measures excess or deficit of bicarbonate in the blood.
+
+**Clinical Importance:**
+Negative base excess often indicates metabolic acidosis, which is common in sepsis due to poor oxygen delivery and lactate buildup.
+
+**Normal Range:**
+-2 to +2 mmol/L
+
+**Sepsis Interpretation:**
+
+* Very negative = severe acidosis
+* Indicates tissue hypoperfusion
+
+**Example Use in Tableau:**
+Track worsening metabolic imbalance in septic patients.
+
+---
+
+## pH
+
+**Definition:**
+Measures blood acidity or alkalinity.
+
+**Clinical Importance:**
+Low pH (acidic blood) is common in severe sepsis and septic shock.
+
+**Normal Range:**
+7.35–7.45
+
+**Sepsis Interpretation:**
+
+* <7.35 = acidosis
+* Lower pH often means worse prognosis
+
+**Example Use in Tableau:**
+Compare pH changes in septic vs non-septic patients.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 10: pH Distribution by Sepsis
+
+* X-axis: pH
+* Color: SepsisLabel
+* Goal: Identify acidotic patients.
+
+### Worksheet 11: Base Excess Trends
+
+* X-axis: Hour
+* Y-axis: Base Excess
+* Goal: Observe worsening metabolic acidosis over time.
+
+### Worksheet 12: Base Excess vs pH
+
+* X-axis: Base Excess
+* Y-axis: pH
+* Color: SepsisLabel
+* Goal: Understand acid-base relationship.
+
