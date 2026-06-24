@@ -378,3 +378,55 @@ Evaluate metabolic instability in sepsis.
 * X-axis: Alkalinephos
 * Color: SepsisLabel
 * Goal: Monitor liver stress.
+
+# 6. Liver Dysfunction Markers
+
+## Bilirubin-direct
+
+**Definition:**
+Measures conjugated bilirubin processed by the liver.
+
+**Clinical Importance:**
+High direct bilirubin may indicate liver dysfunction, bile flow obstruction, or organ stress during sepsis.
+
+**Normal Range:**
+0.0–0.3 mg/dL
+
+**Example Use in Tableau:**
+Evaluate liver injury patterns in septic patients.
+
+---
+
+## Bilirubin-total
+
+**Definition:**
+Measures total bilirubin in the blood, including direct and indirect bilirubin.
+
+**Clinical Importance:**
+Elevated total bilirubin can indicate impaired liver function, which may occur in severe sepsis or multi-organ dysfunction.
+
+**Normal Range:**
+0.1–1.2 mg/dL
+
+**Sepsis Interpretation:**
+High bilirubin may suggest worsening organ failure.
+
+**Example Use in Tableau:**
+Compare liver dysfunction between sepsis and non-sepsis groups.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 17: Total Bilirubin by Sepsis
+
+* X-axis: Bilirubin-total
+* Color: SepsisLabel
+* Goal: Identify liver dysfunction patterns.
+
+### Worksheet 18: Direct vs Total Bilirubin
+
+* X-axis: Bilirubin-direct
+* Y-axis: Bilirubin-total
+* Color: SepsisLabel
+* Goal: Compare liver marker relationships.
