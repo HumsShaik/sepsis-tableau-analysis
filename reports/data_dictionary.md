@@ -691,3 +691,64 @@ Assess clotting abnormalities.
 * X-axis: PTT
 * Color: SepsisLabel
 * Goal: Measure coagulation delays.
+
+# 10. Respiratory Compensation and Acid-Base Regulation
+
+## HCO3 (Bicarbonate)
+
+**Definition:**
+A major buffer that helps maintain blood pH.
+
+**Clinical Importance:**
+Low HCO3 often indicates metabolic acidosis, which is common in severe sepsis.
+
+**Normal Range:**
+22–28 mEq/L
+
+**Sepsis Interpretation:**
+Lower bicarbonate = worsening metabolic stress.
+
+**Example Use in Tableau:**
+Track metabolic acidosis severity.
+
+---
+
+## PaCO2 (Partial Pressure of Carbon Dioxide)
+
+**Definition:**
+Measures carbon dioxide in arterial blood.
+
+**Clinical Importance:**
+Shows respiratory compensation. In sepsis, low PaCO2 may occur as the body tries to compensate for acidosis.
+
+**Normal Range:**
+35–45 mmHg
+
+**Sepsis Interpretation:**
+Low PaCO2 can reflect hyperventilation.
+
+**Example Use in Tableau:**
+Study respiratory compensation patterns.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 30: HCO3 Distribution
+
+* X-axis: HCO3
+* Color: SepsisLabel
+* Goal: Measure bicarbonate depletion.
+
+### Worksheet 31: PaCO2 Trends
+
+* X-axis: PaCO2
+* Color: SepsisLabel
+* Goal: Observe respiratory compensation.
+
+### Worksheet 32: HCO3 vs pH
+
+* X-axis: HCO3
+* Y-axis: pH
+* Color: SepsisLabel
+* Goal: Understand acid-base balance.
