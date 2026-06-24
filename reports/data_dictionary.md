@@ -525,3 +525,98 @@ Monitor fluid and electrolyte shifts.
 * X-axis: Chloride
 * Color: SepsisLabel
 * Goal: Observe electrolyte changes.
+
+# 8. Oxygenation, Energy, and Cardiac Stress Markers
+
+## FiO2 (Fraction of Inspired Oxygen)
+
+**Definition:**
+The percentage of oxygen a patient is receiving.
+
+**Clinical Importance:**
+Higher FiO2 often means the patient needs oxygen support due to respiratory distress.
+
+**Normal Range:**
+21% (room air)
+
+**Sepsis Interpretation:**
+Higher FiO2 may indicate severe lung involvement.
+
+**Example Use in Tableau:**
+Analyze oxygen dependency in septic patients.
+
+---
+
+## SaO2 (Arterial Oxygen Saturation)
+
+**Definition:**
+Measures how much oxygen is bound to hemoglobin in arterial blood.
+
+**Clinical Importance:**
+Low SaO2 indicates poor oxygen delivery.
+
+**Normal Range:**
+95–100%
+
+**Example Use in Tableau:**
+Compare oxygenation levels.
+
+---
+
+## Glucose
+
+**Definition:**
+Blood sugar level.
+
+**Clinical Importance:**
+Sepsis can cause hyperglycemia due to stress response or hypoglycemia in severe organ failure.
+
+**Normal Range:**
+70–140 mg/dL
+
+**Example Use in Tableau:**
+Track glucose instability.
+
+---
+
+## Troponin I
+
+**Definition:**
+A protein released when heart muscle is damaged.
+
+**Clinical Importance:**
+Elevated Troponin I may indicate cardiac injury in severe sepsis.
+
+**Normal Range:**
+<0.04 ng/mL
+
+**Example Use in Tableau:**
+Measure cardiac stress during sepsis.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 23: FiO2 by Sepsis
+
+* X-axis: FiO2
+* Color: SepsisLabel
+* Goal: Assess oxygen support needs.
+
+### Worksheet 24: SaO2 Distribution
+
+* X-axis: SaO2
+* Color: SepsisLabel
+* Goal: Compare oxygen saturation.
+
+### Worksheet 25: Glucose Levels
+
+* X-axis: Glucose
+* Color: SepsisLabel
+* Goal: Detect metabolic stress.
+
+### Worksheet 26: Troponin I by Sepsis
+
+* X-axis: TroponinI
+* Color: SepsisLabel
+* Goal: Identify cardiac injury.
