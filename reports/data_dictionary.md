@@ -430,3 +430,98 @@ Compare liver dysfunction between sepsis and non-sepsis groups.
 * Y-axis: Bilirubin-total
 * Color: SepsisLabel
 * Goal: Compare liver marker relationships.
+
+# 7. Kidney Function and Electrolyte Markers
+
+## Creatinine
+
+**Definition:**
+Waste product filtered by the kidneys.
+
+**Clinical Importance:**
+High creatinine suggests kidney dysfunction, a common complication in sepsis.
+
+**Normal Range:**
+0.6–1.3 mg/dL
+
+**Sepsis Interpretation:**
+Higher values often indicate acute kidney injury (AKI).
+
+**Example Use in Tableau:**
+Track kidney injury severity.
+
+---
+
+## BUN (Blood Urea Nitrogen)
+
+**Definition:**
+Measures nitrogen waste in the blood.
+
+**Clinical Importance:**
+Elevated BUN can indicate kidney failure, dehydration, or poor circulation in sepsis.
+
+**Normal Range:**
+7–20 mg/dL
+
+**Example Use in Tableau:**
+Compare kidney stress across patients.
+
+---
+
+## Calcium
+
+**Definition:**
+Important mineral for nerve, muscle, and heart function.
+
+**Clinical Importance:**
+Low calcium is common in severe sepsis and may be linked to poor outcomes.
+
+**Normal Range:**
+8.5–10.5 mg/dL
+
+**Example Use in Tableau:**
+Study calcium imbalance in septic patients.
+
+---
+
+## Chloride
+
+**Definition:**
+Electrolyte involved in fluid balance and acid-base regulation.
+
+**Clinical Importance:**
+Abnormal chloride may reflect metabolic imbalance in sepsis.
+
+**Normal Range:**
+96–106 mEq/L
+
+**Example Use in Tableau:**
+Monitor fluid and electrolyte shifts.
+
+---
+
+# Tableau Insights to Build
+
+### Worksheet 19: Creatinine by Sepsis
+
+* X-axis: Creatinine
+* Color: SepsisLabel
+* Goal: Detect kidney dysfunction.
+
+### Worksheet 20: BUN Distribution
+
+* X-axis: BUN
+* Color: SepsisLabel
+* Goal: Compare waste accumulation.
+
+### Worksheet 21: Calcium vs Sepsis
+
+* X-axis: Calcium
+* Color: SepsisLabel
+* Goal: Identify mineral imbalance.
+
+### Worksheet 22: Chloride Trends
+
+* X-axis: Chloride
+* Color: SepsisLabel
+* Goal: Observe electrolyte changes.
