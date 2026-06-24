@@ -1,0 +1,1463 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0912.2314                               -->
+<workbook original-version='18.1' source-build='2025.2.3 (20252.25.0912.2314)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Dataset1' inline='true' name='federated.03z6xx813qi5i718lcgme1cbr9mj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Dataset1' name='textscan.1ej8itx0a6flbf1h3eril12peqyk'>
+            <connection class='textscan' directory='C:/Projects/DataAnalysis/sepsis-tableau-analysis/data/raw' filename='Dataset1.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ej8itx0a6flbf1h3eril12peqyk' name='Dataset1.csv' table='[Dataset1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Hour' ordinal='1' />
+            <column datatype='real' name='HR' ordinal='2' />
+            <column datatype='real' name='O2Sat' ordinal='3' />
+            <column datatype='real' name='Temp' ordinal='4' />
+            <column datatype='real' name='SBP' ordinal='5' />
+            <column datatype='real' name='MAP' ordinal='6' />
+            <column datatype='real' name='DBP' ordinal='7' />
+            <column datatype='real' name='Resp' ordinal='8' />
+            <column datatype='string' name='EtCO2' ordinal='9' />
+            <column datatype='real' name='BaseExcess' ordinal='10' />
+            <column datatype='real' name='HCO3' ordinal='11' />
+            <column datatype='real' name='FiO2' ordinal='12' />
+            <column datatype='real' name='pH' ordinal='13' />
+            <column datatype='real' name='PaCO2' ordinal='14' />
+            <column datatype='real' name='SaO2' ordinal='15' />
+            <column datatype='real' name='AST' ordinal='16' />
+            <column datatype='real' name='BUN' ordinal='17' />
+            <column datatype='real' name='Alkalinephos' ordinal='18' />
+            <column datatype='real' name='Calcium' ordinal='19' />
+            <column datatype='real' name='Chloride' ordinal='20' />
+            <column datatype='real' name='Creatinine' ordinal='21' />
+            <column datatype='real' name='Bilirubin_direct' ordinal='22' />
+            <column datatype='real' name='Glucose' ordinal='23' />
+            <column datatype='real' name='Lactate' ordinal='24' />
+            <column datatype='real' name='Magnesium' ordinal='25' />
+            <column datatype='real' name='Phosphate' ordinal='26' />
+            <column datatype='real' name='Potassium' ordinal='27' />
+            <column datatype='real' name='Bilirubin_total' ordinal='28' />
+            <column datatype='real' name='TroponinI' ordinal='29' />
+            <column datatype='real' name='Hct' ordinal='30' />
+            <column datatype='real' name='Hgb' ordinal='31' />
+            <column datatype='real' name='PTT' ordinal='32' />
+            <column datatype='real' name='WBC' ordinal='33' />
+            <column datatype='real' name='Fibrinogen' ordinal='34' />
+            <column datatype='real' name='Platelets' ordinal='35' />
+            <column datatype='real' name='Age' ordinal='36' />
+            <column datatype='integer' name='Gender' ordinal='37' />
+            <column datatype='real' name='Unit1' ordinal='38' />
+            <column datatype='real' name='Unit2' ordinal='39' />
+            <column datatype='real' name='HospAdmTime' ordinal='40' />
+            <column datatype='integer' name='ICULOS' ordinal='41' />
+            <column datatype='integer' name='SepsisLabel' ordinal='42' />
+            <column datatype='integer' name='Patient_ID' ordinal='43' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HR</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HR]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>HR</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>O2Sat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[O2Sat]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>O2Sat</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temp]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Temp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SBP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SBP]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>SBP</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MAP]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>MAP</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DBP</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DBP]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>DBP</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Resp]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Resp</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EtCO2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EtCO2]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>EtCO2</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BaseExcess</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BaseExcess]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>BaseExcess</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HCO3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HCO3]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>HCO3</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FiO2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FiO2]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>FiO2</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pH]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>pH</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PaCO2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PaCO2]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>PaCO2</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SaO2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SaO2]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>SaO2</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AST</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AST]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>AST</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BUN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BUN]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>BUN</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alkalinephos</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Alkalinephos]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Alkalinephos</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calcium</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Calcium]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Calcium</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chloride</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Chloride]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Chloride</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Creatinine</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Creatinine]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Creatinine</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bilirubin_direct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bilirubin_direct]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Bilirubin_direct</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Glucose</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Glucose]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Glucose</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lactate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lactate]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Lactate</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Magnesium</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Magnesium]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Magnesium</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Phosphate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Phosphate]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Phosphate</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Potassium</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Potassium]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Potassium</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bilirubin_total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bilirubin_total]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Bilirubin_total</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TroponinI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TroponinI]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>TroponinI</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hct]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Hct</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hgb</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Hgb]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Hgb</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PTT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PTT]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>PTT</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WBC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WBC]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>WBC</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fibrinogen</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fibrinogen]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Fibrinogen</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Platelets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Platelets]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Platelets</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unit1]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Unit1</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unit2]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Unit2</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HospAdmTime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[HospAdmTime]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>HospAdmTime</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ICULOS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ICULOS]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>ICULOS</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SepsisLabel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SepsisLabel]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>SepsisLabel</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Patient_ID]</local-name>
+            <parent-name>[Dataset1.csv]</parent-name>
+            <remote-alias>Patient_ID</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Base Excess' datatype='real' name='[BaseExcess]' role='measure' type='quantitative' />
+      <column caption='Bilirubin direct' datatype='real' name='[Bilirubin_direct]' role='measure' type='quantitative' />
+      <column caption='Bilirubin total' datatype='real' name='[Bilirubin_total]' role='measure' type='quantitative' />
+      <column caption='Non-Sepsis Patients' datatype='integer' name='[Calculation_389561383720574976]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Calculation_389561383930384387] = 0 THEN [Patient_ID] END' />
+      </column>
+      <column caption='Non-Sepsis Percentage' datatype='real' name='[Calculation_389561383720882177]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Calculation_389561383720574976]) / COUNTD([Patient_ID])' />
+      </column>
+      <column caption='Non-Sepsis Unique Patients' datatype='integer' name='[Calculation_389561383929745410]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [SepsisLabel] = 0 THEN [Patient_ID] END' />
+      </column>
+      <column caption='Patient Max Sepsis' datatype='integer' name='[Calculation_389561383930384387]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Patient_ID] : MAX([SepsisLabel]) }' />
+      </column>
+      <column caption='Hco3' datatype='real' name='[HCO3]' role='measure' type='quantitative' />
+      <column caption='Hosp Adm Time' datatype='real' name='[HospAdmTime]' role='measure' type='quantitative' />
+      <column caption='Iculos' datatype='integer' name='[ICULOS]' role='measure' type='quantitative' />
+      <column caption='Patient ID' datatype='integer' name='[Patient_ID]' role='dimension' type='ordinal' />
+      <column caption='Sepsis Label' datatype='integer' name='[SepsisLabel]' role='measure' type='quantitative' />
+      <column caption='Troponin I' datatype='real' name='[TroponinI]' role='measure' type='quantitative' />
+      <column caption='Dataset1.csv' datatype='table' name='[__tableau_internal_object_id__].[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]' role='measure' type='quantitative' />
+      <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/amhum/AppData/Local/Temp/TableauTemp/#TableauTemp_1yk6q6r0282rrw1czl4yx0y8j6kb.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/24/2026 05:40:58 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>758</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hour</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>758</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HR</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[HR]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HR</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>546</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>O2Sat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[O2Sat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>O2Sat</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>116</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Temp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Temp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Temp</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>532</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SBP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SBP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SBP</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>882</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MAP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MAP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MAP</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1256</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DBP</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DBP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DBP</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>562</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Resp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Resp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Resp</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>225</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EtCO2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EtCO2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EtCO2</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>185</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BaseExcess</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BaseExcess]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BaseExcess</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>315</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HCO3</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[HCO3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HCO3</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FiO2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FiO2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FiO2</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pH</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pH</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>85</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PaCO2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PaCO2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PaCO2</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>404</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SaO2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SaO2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SaO2</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>818</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AST</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AST]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AST</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1712</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BUN</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BUN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BUN</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>297</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Alkalinephos</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Alkalinephos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Alkalinephos</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2353</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Calcium</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Calcium]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calcium</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>285</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Chloride</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Chloride]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Chloride</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Creatinine</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Creatinine]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Creatinine</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1453</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bilirubin_direct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Bilirubin_direct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bilirubin_direct</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>474</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Glucose</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Glucose]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Glucose</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1356</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lactate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lactate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lactate</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1389</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Magnesium</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Magnesium]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Magnesium</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Phosphate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Phosphate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Phosphate</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>144</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Potassium</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Potassium]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Potassium</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>375</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bilirubin_total</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Bilirubin_total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bilirubin_total</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1074</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TroponinI</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TroponinI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TroponinI</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6535</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Hct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hct</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>896</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hgb</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Hgb]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hgb</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>274</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PTT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PTT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PTT</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2778</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WBC</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[WBC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WBC</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>849</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fibrinogen</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Fibrinogen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fibrinogen</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14596</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Platelets</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Platelets]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Platelets</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1622</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26909</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unit1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Unit1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unit1</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unit2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Unit2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unit2</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>HospAdmTime</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[HospAdmTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>HospAdmTime</remote-alias>
+              <ordinal>40</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39874</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ICULOS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ICULOS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ICULOS</remote-alias>
+              <ordinal>41</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>864</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SepsisLabel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SepsisLabel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SepsisLabel</remote-alias>
+              <ordinal>42</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patient_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Patient_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient_ID</remote-alias>
+              <ordinal>43</ordinal>
+              <family>Dataset1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>186646</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Dataset1.csv' id='Dataset1.csv_9423DC96A2D1426197B75B08C7570BF5'>
+            <properties context=''>
+              <relation connection='textscan.1ej8itx0a6flbf1h3eril12peqyk' name='Dataset1.csv' table='[Dataset1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Hour' ordinal='1' />
+                  <column datatype='real' name='HR' ordinal='2' />
+                  <column datatype='real' name='O2Sat' ordinal='3' />
+                  <column datatype='real' name='Temp' ordinal='4' />
+                  <column datatype='real' name='SBP' ordinal='5' />
+                  <column datatype='real' name='MAP' ordinal='6' />
+                  <column datatype='real' name='DBP' ordinal='7' />
+                  <column datatype='real' name='Resp' ordinal='8' />
+                  <column datatype='string' name='EtCO2' ordinal='9' />
+                  <column datatype='real' name='BaseExcess' ordinal='10' />
+                  <column datatype='real' name='HCO3' ordinal='11' />
+                  <column datatype='real' name='FiO2' ordinal='12' />
+                  <column datatype='real' name='pH' ordinal='13' />
+                  <column datatype='real' name='PaCO2' ordinal='14' />
+                  <column datatype='real' name='SaO2' ordinal='15' />
+                  <column datatype='real' name='AST' ordinal='16' />
+                  <column datatype='real' name='BUN' ordinal='17' />
+                  <column datatype='real' name='Alkalinephos' ordinal='18' />
+                  <column datatype='real' name='Calcium' ordinal='19' />
+                  <column datatype='real' name='Chloride' ordinal='20' />
+                  <column datatype='real' name='Creatinine' ordinal='21' />
+                  <column datatype='real' name='Bilirubin_direct' ordinal='22' />
+                  <column datatype='real' name='Glucose' ordinal='23' />
+                  <column datatype='real' name='Lactate' ordinal='24' />
+                  <column datatype='real' name='Magnesium' ordinal='25' />
+                  <column datatype='real' name='Phosphate' ordinal='26' />
+                  <column datatype='real' name='Potassium' ordinal='27' />
+                  <column datatype='real' name='Bilirubin_total' ordinal='28' />
+                  <column datatype='real' name='TroponinI' ordinal='29' />
+                  <column datatype='real' name='Hct' ordinal='30' />
+                  <column datatype='real' name='Hgb' ordinal='31' />
+                  <column datatype='real' name='PTT' ordinal='32' />
+                  <column datatype='real' name='WBC' ordinal='33' />
+                  <column datatype='real' name='Fibrinogen' ordinal='34' />
+                  <column datatype='real' name='Platelets' ordinal='35' />
+                  <column datatype='real' name='Age' ordinal='36' />
+                  <column datatype='integer' name='Gender' ordinal='37' />
+                  <column datatype='real' name='Unit1' ordinal='38' />
+                  <column datatype='real' name='Unit2' ordinal='39' />
+                  <column datatype='real' name='HospAdmTime' ordinal='40' />
+                  <column datatype='integer' name='ICULOS' ordinal='41' />
+                  <column datatype='integer' name='SepsisLabel' ordinal='42' />
+                  <column datatype='integer' name='Patient_ID' ordinal='43' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dataset1' name='federated.03z6xx813qi5i718lcgme1cbr9mj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03z6xx813qi5i718lcgme1cbr9mj'>
+            <column caption='Non-Sepsis Patients' datatype='integer' name='[Calculation_389561383720574976]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Calculation_389561383930384387] = 0 THEN [Patient_ID] END' />
+            </column>
+            <column caption='Non-Sepsis Percentage' datatype='real' name='[Calculation_389561383720882177]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Calculation_389561383720574976]) / COUNTD([Patient_ID])' />
+            </column>
+            <column caption='Patient Max Sepsis' datatype='integer' name='[Calculation_389561383930384387]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [Patient_ID] : MAX([SepsisLabel]) }' />
+            </column>
+            <column caption='Patient ID' datatype='integer' name='[Patient_ID]' role='dimension' type='ordinal' />
+            <column caption='Sepsis Label' datatype='integer' name='[SepsisLabel]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_389561383720882177]' derivation='User' name='[usr:Calculation_389561383720882177:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.03z6xx813qi5i718lcgme1cbr9mj].[usr:Calculation_389561383720882177:qk]' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.03z6xx813qi5i718lcgme1cbr9mj].[usr:Calculation_389561383720882177:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A507CB26-0ED6-4FB9-B51C-0B076D4EE767}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.03z6xx813qi5i718lcgme1cbr9mj].[usr:Calculation_389561383720882177:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>0.92731059103530344</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{B3162C5E-760C-493E-8AAE-FE803E7836BE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='25' name='Sheet 1' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAE4UlEQVRYhe2Xf0yUdRzHX8/D/eS44/hxiohARJim2BZDp2AtJTWXQr80Spn5azLRP242
+      y4XOSlvK1pYbleaaJmpLLYalM5qCA7RSnNr8ESJ33AEHIr+Og+O8pz+IW+ehWNd2K3lvzx/P
+      +/v5fO/9vJ/P5/l8T5AkSeIhhhhoAYHGsAGBFhBoDBsQaAGBxrABgRYQaMiGCqi2/b+PCQ99
+      BQwbEGgBgcZDb8CQH8Gh4OztoXjf55Qf/w6A9Fnzmff6ChRK1T1zXH1Ofiw+yE/FB7F3dvDo
+      uIksXGEkOi7BE3P5XBXff/0lNqsZmVzB9NmZzJi3AIVShc1q5tg3e3A6e3321mhDmZe9HI1W
+      R0ujldLiA1SfKcfV50QdHMLM+QuZOnMuMrkCAGGof4P3mwKS5Gbvjg9Bkli40gjAgc8KQBBY
+      tHo9guBbYJLkpmT/btpbW3h56RqUKhUXzpymZP8uVq7fgmFUDAAfv7uGrJxVjEkYi8PexdED
+      u7F3dbA47x0kJDrb2+Au6ebaaxw/9BW5Gz5CDAqiqHAbE56aQnJqOupgDW23mikq3EbkyGhe
+      WbYGQRD9awHLzRqaG+rJyslFoVShUKrIysmluaEey82aQXNsDRZuXLlI5uJVqNTBCILIk1Om
+      k5yaxqkfDnvi1m7+mLjEcYiiiEarIyMrG5vVTEf7bWQyOWERBsIiR3gufUQk5ytOMnXGXDRa
+      HepgDUuNm5j8zGzUwRoA9BEGXlqymuZGCz0OB+DnN8BSV0NMfCLa0DAPpw0NIyY+EUvd4AZ0
+      tbehjzAQogv14iemTMNqqqXH0Q3gUz2ObjtyhQL5n6V7N0w112hutJKcmnZfzbdsDUiSmyBZ
+      f/f7ZUCTxeTVtwOIjkugyWIaNEcURW632HB02714fYQBe2c7DnuXT05XRxtFhduYNDndxzjo
+      b6uyY0dInZ7h9TL+Cperj+qqMr7d8ynPL1iCQqHs1zPkUw4BdXDIA3EDGJPwGDK5nJL9u3D2
+      9gBg7+zgwtlyHHa7T/zlc1VsNS4lJX0Gz77w6qB7NtWbaKo3MWlyus/aiSNFGN+YQ25mGpWl
+      R8nbWEDC2Amedb+mgFqjxVx7nZT0mV68ufY6ITr9oDkyuYLV+QVenEarI3FcMpd+qUSt6Tfv
+      i+0bAViU9zYf7Dx0Tw1NVjN7d2xl+VvvExoe6bOekZVNRla2V3zhlvUsW7eZcEOUfxUQm5CE
+      qeYqvT0OD9fb48BUc5XYhKS/tdelc1VExcSiUgcDcOeOi5y1G+47TgHKjx1hYmoa+gjDA/2O
+      Th+OXKHkdksz4GcLxCeNRxAEzlec9HDnK04iCALxSeMBuONycenXSm7ZGjwxvY5uJMntuTff
+      uMbFs6d5es6LADidvaTPyvTM6nuhpdFK3e9XSJk2w2etsb6O6qoy3G63F193/Tdcrj6iYuIA
+      P1tAqVLz2kojn2w2UlFaAkBbawt5+QUoVWrPwxTv28lzWdlEjBgFwOE9hVRXnuKRsU/Q3dVJ
+      a3Mjbxo3ec4A9s4Odm3PRxS9309oeCR5+QWeUq8oLSEu8XEio6J9tKk1IfxcdoLdBZswjBrN
+      yNGxmGquEhQkY9m699BodYCfB6EBuN1uOttaAdDqw32EDwZHt52ebjuiKD5wzj/BgDa3241c
+      ofSZIv+KAf9l/AHEd8aJ8svbegAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
